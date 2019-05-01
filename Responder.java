@@ -44,9 +44,16 @@ public class Responder
         responses.add("Thats a known problem with Vista." +
         "Windows 7 is much better.");
         responses.add("I need a bit more information on that");
-       
-        responses.add("have you checked that you do not /n" +
+        responses.add("have you checked that you do not \n" +
         "have a dll conflict?");
+        responses.add("That is explained in the manual. \n" +
+        "Have you read the manual?");
+        responses.add("Your description is a bit \n" +
+        "Wishy-washy. Have you got an expeert \n" +
+        "there with you who could describe \n" +
+        "This more precisly?");
+        responses.add("Thats not a bug, it's a feature!");
+        responses.add("Could you elaborate on that?");
         
     }
 }
