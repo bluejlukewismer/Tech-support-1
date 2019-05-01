@@ -1,8 +1,4 @@
 
-Author: Luke Wismer
-Date: 4/30/19
-Version: 1.1.1
-
 TechSupport - the DodgySoft Technical support system.
 This project is part of the material for the book
 
