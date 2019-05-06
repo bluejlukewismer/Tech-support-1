@@ -1,12 +1,7 @@
 
 import java.util.Random;
 import java.util.ArrayList;
-/**
- * Write a description of class randomTester here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
+
 public class randomTester
 {
     // instance variables - replace the example below with your own
