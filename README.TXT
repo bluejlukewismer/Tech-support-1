@@ -1,4 +1,4 @@
-oof whatup
+
 TechSupport - the DodgySoft Technical support system.
 This project is part of the material for the book
 
