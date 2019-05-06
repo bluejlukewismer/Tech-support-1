@@ -80,14 +80,5 @@ public class Responder
         "The cost of the product is quite competitive. \n" +
         "have you looked around and" +
         "really compared our features?");
-        
-        
-        
-        
-        
-        
-        
-        
-        
     }
 }
