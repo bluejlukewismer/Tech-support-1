@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Random;
-
+import java.util.HashMap;
 
 /**
  * The responder class represents a response generator object.
@@ -13,6 +13,7 @@ public class Responder
 {
     private Random randomGenerator;
     private ArrayList<String> responses;
+    private HashMap responseMap = new HashMap();
     /**
      * Construct a Responder - nothing to do
      */
@@ -20,18 +21,25 @@ public class Responder
     {
         randomGenerator = new Random();
         responses = new ArrayList<String>();
+        fillResponseMap();
         fillResponses();
+        
     }
 
     /**
      * Generate a response.
      * @return   A string that should be displayed as the response
      */
-    public String generateResponse()
+    public String generateResponse(String input)
     {
         int index = randomGenerator.nextInt(responses.size());
         return responses.get(index);
         //return "That sounds interesting. Tell me more...";
+        if(input.contains("slow"))
+        {
+            return responseMap.get("slow");
+        }
+        
     }
 
     private void fillResponses()
@@ -54,6 +62,32 @@ public class Responder
         "This more precisly?");
         responses.add("Thats not a bug, it's a feature!");
         responses.add("Could you elaborate on that?");
+        
+    }
+    private void fillResponseMap()
+    {
+        responseMap.put("slow",
+        "I think this has to do with your hardware. \n" +
+        "Upgrading your processor should solve all" +
+        "performance problems. \n" +
+        "Have you got a problem with our software?");
+        responseMap.put("bug",
+        "Well, you know, all software has some bugs \n" +
+        "But our software engineers are working very" +
+        "hard to fix them. \n" +
+        "Can you describe the problem a bit further?");
+        responseMap.put("expensive",
+        "The cost of the product is quite competitive. \n" +
+        "have you looked around and" +
+        "really compared our features?");
+        
+        
+        
+        
+        
+        
+        
+        
         
     }
 }
