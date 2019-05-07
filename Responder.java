@@ -26,19 +26,16 @@ public class Responder
         
     }
 
-    /**
-     * Generate a response.
-     * @return   A string that should be displayed as the response
-     */
-    public String generateResponse(String input)
+     //String input
+    public String generateResponse()
     {
         int index = randomGenerator.nextInt(responses.size());
         return responses.get(index);
         //return "That sounds interesting. Tell me more...";
-        if(input.contains("slow"))
-        {
-            return responseMap.get("slow");
-        }
+       // if(input.contains("slow"))
+        //{
+         //   return responseMap.get("slow");
+       // }
         
     }
 
