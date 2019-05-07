@@ -22,30 +22,33 @@ public class Responder
         randomGenerator = new Random();
         responses = new ArrayList<String>();
         fillResponseMap();
-        responseMap = new HashMap();
+        responseMap = new HashMap<String, String>();
         //fillResponses();
-        
 
     }
-
     //String input
-    public String generateResponse()
+    public String generateResponse(String input)
     {
-        int index = randomGenerator.nextInt(responses.size());
-        return responses.get(index);
+
         //return "That sounds interesting. Tell me more...";
-
-        
-    }
-
-    public String generateResponseMap(String input)
-    {
         if(input.contains("slow"))
         {
             return responseMap.get("slow");
         }
-        
+        if(input.contains("bug"))
+        {
+            return responseMap.get("bug");
+        }
+        if(input.contains("expensive"))
+        {
+            return responseMap.get("expensive");
+        }
+        else{
+            int index = randomGenerator.nextInt(responses.size());
+            return responses.get(index); 
+        }
     }
+
 
     private void fillResponses()
     {
