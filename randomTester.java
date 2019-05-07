@@ -2,7 +2,7 @@
 import java.util.Random;
 import java.util.ArrayList;
 
-public class randomTester
+public class randomTester 
 {
     // instance variables - replace the example below with your own
     private Random random;
