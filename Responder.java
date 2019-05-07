@@ -13,7 +13,7 @@ public class Responder
 {
     private Random randomGenerator;
     private ArrayList<String> responses;
-    private HashMap responseMap = new HashMap();
+    private HashMap<String,String> responseMap; 
     /**
      * Construct a Responder - nothing to do
      */
@@ -22,6 +22,7 @@ public class Responder
         randomGenerator = new Random();
         responses = new ArrayList<String>();
         fillResponseMap();
+        responseMap = new HashMap();
         //fillResponses();
         
 
