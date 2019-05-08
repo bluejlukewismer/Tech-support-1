@@ -21,15 +21,16 @@ public class Responder
     {
         randomGenerator = new Random();
         responses = new ArrayList<String>();
-        fillResponseMap();
+        
         responseMap = new HashMap<String, String>();
         //fillResponses();
+        fillResponseMap();
 
     }
     //String input
     public String generateResponse(String input)
     {
-
+        int index = randomGenerator.nextInt(responses.size());
         //return "That sounds interesting. Tell me more...";
         if(input.contains("slow"))
         {
@@ -44,8 +45,9 @@ public class Responder
             return responseMap.get("expensive");
         }
         else{
-            int index = randomGenerator.nextInt(responses.size());
+            
             return responses.get(index); 
+            //return "That sounds interesting. Tell me more...";
         }
     }
 
