@@ -21,9 +21,8 @@ public class Responder
     {
         randomGenerator = new Random();
         responses = new ArrayList<String>();
-        
         responseMap = new HashMap<String, String>();
-        //fillResponses();
+        fillResponses();
         fillResponseMap();
 
     }
